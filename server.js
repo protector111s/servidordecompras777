@@ -662,10 +662,11 @@ app.listen(PORT, () => console.log(`✅ Servidor activo en puerto ${PORT}`));
 
 setInterval(async () => {
   try {
-    const res = await fetch("https://pintalaqyolacoloreo.onrender.com"); 
+    const res = await fetch("https://servidordecompras777.onrender.com"); 
     const text = await res.text();
     console.log("🔄 Auto-ping realizado:", text);
   } catch (error) {
     console.error("❌ Error en auto-ping:", error.message);
   }
+
 }, 180000);
